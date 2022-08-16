@@ -17,9 +17,5 @@
 
 ## Aprendizados
 
-
-
-
-    Tomar a atitude de simplesmente começar algo e dar vida a idéia
-
+- Tomar a atitude de simplesmente começar algo e dar vida a idéia
 
