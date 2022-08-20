@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <main id = "container">
+        <section class="display">
+           <article id="logCalc">
+
+           </article>
+           <article class="contentInsert">
+            <p id = "inputCalc"></p>
+           </article>
+        </section>
+        <section class="keyboard">
+            <article class="sectionKeys">
+
+                <ul>
+                    <li onclick="clean()">
+                        <i class="ph-eraser"></i>
+                    </li>
+                    <li onclick="back()" >
+                        <i class="ph-backspace" ></i>
+                    </li>
+                    <li onclick="insert('%')" >
+                        <i class="ph-percent"></i>
+                    </li>
+                    <li onclick="insert('/')" >
+                        <i class="ph-divide"></i>
+                    </li>
+                </ul>
+            </article>
+            <article class="sectionKeys" >
+                <ul>
+                    <li onclick="insert('7')" >
+                        <i class="ph-number-seven"></i>
+                    </li>
+                    <li onclick="insert('8')" >
+                        <i class="ph-number-eight"></i>
+                    </li>
+                    <li onclick="insert('9')" >
+                        <i class="ph-number-nine"></i>
+                    </li>
+                    <li onclick="insert('*')" >
+                        <i class="ph-x"></i>
+                    </li>
+                </ul>
+                
+            </article>
+            <article class="sectionKeys" >
+                <ul>
+                    <li onclick="insert('5')" >
+                        <i class="ph-number-five"></i>
+                    </li>
+                    <li onclick="insert('4')" >
+                        <i class="ph-number-four"></i>
+                    </li>
+                    <li onclick="insert('6')" >
+                        <i class="ph-number-six"></i>
+                    </li>
+                    <li onclick="insert('-')" >
+                        <i class="ph-minus"></i>
+                    </li>
+                </ul>
+                
+            </article>
+            <article class="sectionKeys" >
+                <ul>
+                    <li onclick="insert('1')" >
+                        <i class="ph-number-one"></i>
+                    </li>
+                    <li onclick="insert('2')" >
+                        <i class="ph-number-two"></i>
+                    </li>
+                    <li onclick="insert('3')" >
+                        <i class="ph-number-three"></i>
+                    </li>
+                    <li onclick="insert('+')" >
+                        <i class="ph-plus"></i>
+                    </li>
+                </ul>
+                
+            </article>
+            <footer class="sectionKeys" >
+                <ul>
+                    <li onclick="insert('0')" >
+                        <i class="ph-number-zero"></i>
+                    </li>
+                    <li onclick="insert('.')" >
+                        <i class="ph-wifi-none"></i>
+                    </li>
+                    <li onclick="calcular()" >
+                        <i class="ph-equals"></i>
+                    </li>
+                </ul>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
