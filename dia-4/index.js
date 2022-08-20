@@ -14,7 +14,7 @@ function back()
     document.getElementById('inputCalc').innerHTML = resultado.substring(0, resultado.length -1);
 }
 
-function calcular()
+async function calcular()
 {
     const resultado = document.getElementById('inputCalc').innerHTML;
     if(resultado)
@@ -23,9 +23,11 @@ function calcular()
         const calculo = document.getElementById('inputCalc').innerHTML;
 
         const logElement = document.createElement('span');
-        document.getElementById('inputCalc').innerHTML = eval(resultado);
+        document.getElementById('inputCalc').innerHTML = await eval(resultado);
 
-        if(calculo == eval(resultado)){
+        const compare = await eval(calculo);
+
+        if(calculo == compare){
             return;
         }else{
             const logText = document.createTextNode(`${calculo} = ${eval(resultado)}`);
