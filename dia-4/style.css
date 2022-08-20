@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    -ms-overflow-style: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1F202A;
+
+    
+}
+
+body::-webkit-scrollbar {
+    display: none
+}
+
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 5%;
+    width: 31.25rem;
+    height:80%;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 95%;
+    align-items: end;
+    justify-content: end;
+    border: 0.325rem solid #747875;
+    font-size: 2rem;
+    border-radius: 5% 5% 0 0;
+}
+
+.contentInsert {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    font-size: 2rem;
+}
+
+#logCalc {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 75%;
+    border-radius: 5% 5% 0 0;
+    overflow-y: scroll;
+    color: rgba(253, 255, 254, 0.854);
+    opacity: 0.6;
+    margin: 0.325rem 0.125rem 0 0.0625rem;
+    background: #b7b7bb3d;
+    
+}
+
+#logCalc::-webkit-scrollbar{
+    width: 0.3125rem;
+    height: 0.125rem;
+    border-radius: 0.3125rem;
+    background: #252527;
+}
+#logCalc::-webkit-scrollbar-thumb{
+    border-radius: 0.3125rem;
+    background: #dfdfdf;
+}
+
+#inputCalc {
+    display: flex;
+    width: 100%;
+    font-size: 2rem;
+    background: #dbe2de;
+    border: none;
+    align-items: center;
+    justify-content: right;
+    padding: 0.3125rem;
+    color: black;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem;
+    border-radius: 0 0 5% 5%;
+}
+
+.sectionKeys {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+li{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3125rem;
+    border-radius: 5%;
+    background: #6e70873d;
+    border-bottom: 0.125rem solid #6e70873d;
+    margin: 0.125rem;
+    opacity: 0.6;
+    color: #fff
+    
+}
+
+li:hover {
+    opacity: 1;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-bottom: 0.125rem solid #00b33b;
+    font-weight: bold;
+}
+
+footer ul :nth-child(3){
+    width: 51%;
+}
