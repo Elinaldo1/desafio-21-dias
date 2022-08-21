@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+ 
+ body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(galaxy.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+   
+}  
+
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+   
+}
+
+.sky {
+    widows: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sky img {
+    position: absolute;
+    width: 400px;
+    top: 0;
+}
+
+.sky h2 {
+    margin: 30px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 16em;
+    color: #fff;
+    text-shadow: 0.9375rem 0.9375rem 0 rgba(244, 239, 239, 0.1);
+}
+
+.sky h2 span {
+    display: flex;
+    animation: animate 2s ease-in-out infinite;
+}
+
+.sky h2 span:nth-child(even) {
+    animation-delay: -1s;
+}
+
+@keyframes animate {
+    0%, 100% {
+        transform: translateY(-3.125rem);
+    }
+    50% {
+        transform: translateY(3.125rem);
+    }
+}
+
+.field {
+    position: absolute;
+    bottom: 10%;
+    animation: fieldAnime 1s ease-in-out infinite;
+}
+
+@keyframes fieldAnime {
+    0%{
+        color: transparent
+    }
+}
