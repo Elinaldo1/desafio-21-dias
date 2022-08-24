@@ -266,7 +266,7 @@ body{
     height: 1rem;
     margin: 1rem;
     position: absolute;
-    top: 0;
+    top: 0.5rem;
     right: 0;
     display: flex;
     justify-content: center;
