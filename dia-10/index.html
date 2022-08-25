@@ -5,17 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- first include tsParticles engine -->
-<script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
-
-<!-- then include any tsParticles plugin needed -->
-<script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script>
-
-<!-- then include jquery wrapper -->
-<script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
+    <link rel="stylesheet" href="style.css">
+      <!-- ==== Fontawesome CDN Link ==== -->
+      <script src="https://unpkg.com/phosphor-icons"></script>
 </head>
 <body>
-    <div id="tsparticles"></div>
+    <div onclick="darkMode()" class="containerButtonTheme">
+        <a href="#" >
+            <span id = "captionOptionTheme" >
+                <i id="iconLight" class="ph-sun-dim-bold"></i>
+                <i id = "iconDark" class="ph-moon-stars-bold"></i>
+            </span>
+        </a>
+    </div>
+    <ul>
+        <li style="--clr:#f22">
+            
+            <a translate="no" href="#" 
+                data-text="&nbsp;Feliz&nbsp;Aniversário&nbsp;">
+                &nbsp;Feliz&nbsp;Aniversário&nbsp;</a>
+        </li>
+        <li style="--clr:#f22">
+            
+            <a translate="no" href="#" 
+                data-text="&nbsp;Amor&nbsp;">
+                &nbsp;Amor&nbsp;</a>
+        </li>
+    </ul>
+    <main id="particles-js">
+    </main>
     <script src="script.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js" ></script>
 </body>
 </html>
