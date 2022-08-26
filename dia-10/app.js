@@ -35,7 +35,7 @@ particlesJS('particles-js',
           "nb_sides": 5
         },
         "image": {
-          "src": "union.png",
+          "src": "Union.png",
           "width": 100,
           "height": 100
         }
@@ -65,7 +65,7 @@ particlesJS('particles-js',
         "distance": 350,
         "color": "#E80F0F",
         "opacity": 1,
-        "width": 1
+        "width": 3
       },
       "move": {
         "enable": true,

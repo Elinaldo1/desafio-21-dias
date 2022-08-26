@@ -24,7 +24,7 @@ main {
     align-items: center;
     justify-content: center;
     top: 50%;
-    left: 10%;
+    left: 20%;
     position: absolute;
     flex-direction: column;
     flex-wrap: wrap;
@@ -46,7 +46,7 @@ ul li a{
     cursor: default;
     display: flex;
     position: relative;
-    font-size: larger;
+    font-size: 2rem;
     text-decoration: none;
     line-height: 1em;
     letter-spacing: 0.1rem;
