@@ -16,6 +16,7 @@ body {
 
 form {
     display: flex;
+    margin-top: 3rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -96,5 +97,5 @@ img {
 }
 .top {
     width: 5rem;
-    padding: 0.5rem;
+    margin: 1rem 0 2rem 0
 }
