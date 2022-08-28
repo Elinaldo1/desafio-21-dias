@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'consolas';
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit {
+    margin-top: 1.875rem;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 3.75rem;
+    border: 0;
+    background: #205d1f;
+    color: #fff;
+    border-radius: 1.875rem;
+    padding: 0 1.25rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#submit:hover {
+    background: #07480b;
+}
+
+.single-input {
+    position: relative;
+    display: flex;
+    margin: 0.625rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-input label {
+    position: absolute;
+    left: 0.9175rem;
+    cursor: text;
+    color:#205d1f8f;
+    font-size: 1.2rem;
+    transition: 0.5s ease-in-out;
+}
+
+.single-input input {
+    height: 3.75rem;
+    border: 0;
+    border-left: 0.1875rem solid #205d1f8f;
+    border-bottom: 0.3125rem solid #205d1f8f;
+    color: #205d1f;
+    border-radius: 1.875rem;
+    padding: 0 1.25rem;
+    outline: 0;
+    margin: 0.3125rem 0 0.3125rem 0;
+}
+
+.single-input input:focus,
+.single-input input:valid
+ {
+    border-left: 0.1875rem solid #205d1f;
+    border-bottom: 0.3125rem solid #205d1f;
+}
+
+.single-input input:focus ~ label,
+.single-input input:valid ~ label
+ {
+    transform: translateY(-1.875rem);
+    left: 2.1875rem;
+    font-size: 1rem;
+    color:#205d1f;
+}
+
+.img {
+    margin-top: 1rem;
+    width: 100%;
+    overflow: hidden; /* Faz o div não aumentar a altura por causa da imagem */
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+.top {
+    width: 5rem;
+    padding: 0.5rem;
+}
