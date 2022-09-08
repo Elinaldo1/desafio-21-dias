@@ -57,7 +57,7 @@
 function renderListImages(imgUrlList) {
     imgUrlList ? imgUrlList.map((item, id) => {
 
-        const conatiner = document.querySelector('.cats');
+        const container = document.querySelector('.cats');
         const liElement = document.createElement('li');
         const linkElement = document.createElement('a');
         const imgElement = document.createElement('img');
@@ -71,7 +71,7 @@ function renderListImages(imgUrlList) {
 
         liElement.appendChild(linkElement);
 
-        conatiner.appendChild(liElement);
+        container.appendChild(liElement);
 
     }): null;
 }
