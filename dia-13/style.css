@@ -117,6 +117,10 @@ iframe {
     width: 19.75rem;
 }
 
+#menu {
+    width: 100%;
+}
+
 .drawer {
     display: flex;
     position: relative;
