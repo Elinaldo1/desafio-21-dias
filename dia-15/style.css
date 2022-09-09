@@ -22,7 +22,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background: #f4f3ee;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 body::-webkit-scrollbar{
@@ -38,12 +38,21 @@ body::-webkit-scrollbar-thumb{
 }
 
 header {
+    position: relative;
+    background-image: linear-gradient(#aabcd0, #c7c8c9);
     color: #131e2f;
     display: flex;
+    gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.3em;
+    /* font-weight: 800; */
 }
 
 header input {
@@ -104,6 +113,11 @@ img {
     margin: 0 auto;
     color: #ffffff;
     border-radius: 10px;
+    overflow-x: scroll;
+}
+
+.content h1 {
+    text-align: center;
 }
 
 .content li:hover {
@@ -130,4 +144,10 @@ img {
 
 .content li:last-child {
     display: none;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
 }
