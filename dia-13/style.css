@@ -19,7 +19,7 @@ body{
 
 iframe {
     padding-top: 4%;
-    height: 90%;
+    height: 100%;
     width: 100%;
     border: none;
 }
@@ -28,7 +28,7 @@ iframe {
     color: #fff;
     background: #1F202A;
     text-align: center;
-    padding: 2rem;
+    padding: 1.8rem;
 }
 
 #hd {
@@ -53,7 +53,7 @@ iframe {
     display: flex;
     flex-direction: column;
     z-index: 1;
-    top: 0;
+    top: 20px;
     left: 0;
     background-color: #1F202A;
     overflow-x: hidden;
