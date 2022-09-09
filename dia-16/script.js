@@ -1,11 +1,7 @@
-
-
-
-    const myHeaders = new Headers();
+const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     myHeaders.append("x-api-key", "17d94b92-754f-46eb-99a0-65be65b5d18f");
-    
-    
+       
     const requestOptions = {
         method: 'GET',
         redirect: 'follow'
@@ -15,8 +11,6 @@
       
       let imgUrls = []
       
-
-     
     // Recursive function 
     async function getApi(countDown){
 
@@ -25,8 +19,7 @@
             if (countDown > 10) {
                 return;
             };
-
-            
+          
             fetch(url, requestOptions)
             .then(res => { 
                 res.json()
