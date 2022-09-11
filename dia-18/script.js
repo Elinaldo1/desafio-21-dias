@@ -1,79 +1,38 @@
-
-const botaoPesquisar = document.querySelector("#botaoPesquisar")
-botaoPesquisar.addEventListener("click", () => showImges() );
-
+// const botaoPesquisar = document.querySelector("#botaoPesquisar")
 const resultado = document.querySelector("#resultado")
 const container = document.querySelector('ul');
+const cardTemplate = document.getElementById("card-template");
+
+// botaoPesquisar.addEventListener("click", () => showImges() );
+
+for (let i = 0; i < 50; i++) {
+  container.append(cardTemplate.content.cloneNode(true));
+}
 
 function clearImages(){
     
     const containerImages = document.querySelector('ul');
     containerImages.innerHTML = '';
-    // resultado.innerHTML= '';
-}    
+};   
 
-async function getApi(countDown){
+async function getApi(){
 
     const optionsPesquisa = 'abcdefghijklmnopqrstuvwxyz0123456789';
     
-    const pesquisa = optionsPesquisa[Math.floor(Math.random()*optionsPesquisa.length)];
-    
-    // "countDown >= 10" is the exit condition (equivalent to "!(countDown < 10)")
-    if (countDown > 9) {
-        return;
-    };
+    for (let i = 0; i < 50; i++) {
+        const pesquisa = optionsPesquisa[Math.floor(Math.random()*optionsPesquisa.length)];
 
+        const div = cardTemplate.content.cloneNode(true);
+        div.getElementById("img").style.display = 'flex';
+        div.getElementById("img").src = `https://source.unsplash.com/700x500/?${pesquisa}`;
+        container.append(div);
+      }
 
-    getApi(countDown + 1).then(
-        renderListImages(`https://source.unsplash.com/700x500/?${pesquisa}`)
-        // console.log(countDown),
-    );
 };
-
 
 function showImges(){
     clearImages(),
     getApi(0);
-}
-
-
-
-function renderListImages(urlImg) {
-
-        const liElement = document.createElement('li');
-        const linkElement = document.createElement('a');
-        const imgElement = document.createElement('img');
-    
-        linkElement.href = '#';
-        linkElement.setAttribute('onclick', 'openModal(event)');
-        imgElement.loading = "lazy";
-        imgElement.src = urlImg;
-    
-        linkElement.appendChild(imgElement);
-    
-        liElement.appendChild(linkElement);
-    
-        container.appendChild(liElement);
-    
-        resultado.appendChild(container);
-        
-}
+};
 
 showImges();
-// function openModal(event) {
-//         const element = document.body;
-//         element.classList.toggle("openModal");
-
-//         const imgModal = document.querySelector('#imgModal');
-//         imgModal.src = event.target.src;
-
-// };
-
-// function closeModal(){
-//         const element = document.body;
-//         element.removeAttribute('class');
-
-//         // alert('close')
-// };
-
-
