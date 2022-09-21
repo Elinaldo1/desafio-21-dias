@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=
-        , initial-scale=1.0">
-        <title>desafio21diasdecodigo</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-        <div id="resultado">
-            <ul >
-                <template id="card-template">
-                    <li class="cImage skeleton" >
-                        <a href="#" class="">
-                            <img id="img" src="" alt="img">
-                        </a>
-                    </li>
-                </template>
-            </ul>
-        </div>
-        <script src="script.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="gerar senha, gerador de senhas">
+    <title>Gerador de senha</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-[#18181B] h-screen w-full flex flex-col justify-center items-center ">
+    
+    <img class="max-w-[37.5rem] mb-6" src="./assets//logo.png" alt="logo gerador de senha" srcset=""/>
+
+    <main class="container-input max-w-md my-4 mx-0">
+
+        <span class="text-white text-[22px]" >Tamanho <span id="sizePassword" >10</span> caracteres</span>
+        <input id="slider" class="slider appearance-none w-full rounded-md bg-[#dfdfdf] outline-none h-4 mt-2"  type="range" min="5" max="25" >
+
+        <button id="button" class="button-cta h-10 bg-[#3EB72B] border-0 rounded cursor-pointer
+        mt-10 text-white font-bold text-lg">Gerar senha</button>
+    </main>
+
+    <div id="conainer-password" class="container-password c-hidden flex cursor-pointer max-w-[480px] my-4 items-center flex-col">
+
+        <span class="title text-white text-center text-2xl mt-6 mb-2">Sua senha gerada foi:</span>
+
+        <span id="password" class="password h-[60px] bg-slate-800 rounded flex justify-center  items-center text-white border-solid border border-slate-400">123123123123</span>
+
+        <span>Clique na senha para copiar.📄</span>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
